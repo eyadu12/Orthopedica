@@ -1,0 +1,65 @@
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Adjust padding as needed */
+    padding-top: 10vh;
+    background-color: rgba(0, 21, 49, 0.449);
+    padding-bottom: 20vh;
+}
+.services-container h1{
+    color: aqua;
+    font-size: 1.4VW;
+    text-align: center;
+}
+.services-content1, .services-content2, .services-content3, .services-content4, .services-content5, .services-content6 {
+    width: 30%; /* Adjust width as needed */
+    height: 35vh; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    overflow: hidden; /* Ensure the pseudo-element does not overflow the container */
+}
+
+.services-content1::before, .services-content2::before, .services-content3::before, 
+.services-content4::before, .services-content5::before, .services-content6::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('');
+    background-size: cover; /* Cover the area of the pseudo-element */
+    background-position: center; /* Center the background image */
+    transition: transform 0.5s ease; /* Smooth transition for transform */
+    z-index: -1; /* Place the pseudo-element behind the content */
+}
+
+.services-content1::before {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./1.jpg');
+}
+.services-content2::before {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./2.jpg');
+}
+.services-content3::before {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./3.jpg');
+}
+.services-content4::before {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./4.jpg');
+}
+.services-content5::before {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./5.jpg');
+}
+.services-content6::before {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./6.jpg');
+}
+
+/* Adding hover effect to zoom the background image */
+.services-content1:hover::before, .services-content2:hover::before, .services-content3:hover::before, 
+.services-content4:hover::before, .services-content5:hover::before, .services-content6:hover::before {
+    transform: scale(1.1); /* Scale up the background image */
+}

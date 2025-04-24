@@ -1,0 +1,33 @@
+.article-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2vw;
+    margin-top: 7vh;
+    margin-bottom: 10vh;
+    margin: 4vw;
+}
+.article-content h1{
+    font-size: xx-large;
+
+    
+}
+
+.article-content p{
+    margin-top: 4vh;
+    font-size: larger;
+    color: rgba(0, 0, 0, 0.567);
+    text-align: center;
+
+}
+.article-content button{
+    margin-top: 8vh;
+    padding: 1vw 3vw;
+    font-size: 1em;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

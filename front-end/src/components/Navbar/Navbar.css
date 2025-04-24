@@ -1,0 +1,96 @@
+/* Add to your existing Navbar.css file */
+.upper h1{
+    color: rgb(4, 4, 118);
+    cursor: pointer;
+}
+.upper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+}
+.upper ul{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 9vw;
+}
+.upper ul li{
+    list-style: none;
+    padding: 1vw;
+    margin: 0.4vw;
+    border-radius: 7%;
+    border: 2px solid blue;
+    font-size: smaller;
+}
+.lower{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(2, 2, 84);
+    margin-top: 2vh;
+}
+.lower ul li {    
+    position: relative; /* Needed for absolute positioning of the dropdown */
+    padding: 1vw;
+    color: white;
+    margin-left: 4vw;
+    list-style: none;
+}
+.lower ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1vh;
+}
+
+.dropdown-content {
+    margin-top: 17px;
+    display: none;
+    position: absolute;
+    background-color: rgb(2, 2, 84);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    padding: 0.6vw;
+    padding-left: 1vw;
+    text-decoration: none;
+    display: block;
+    color: white;
+}
+
+.lower ul li:hover .dropdown-content {
+    display: block;
+}
+
+.lower ul li:hover {
+    color: aquamarine;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(3, 16, 96);
+    color: rgb(161, 161, 240);
+}
+
+
+@media (max-width: 700px) {
+    .upper ul li{
+        font-size: 3vw;
+
+
+    }
+    .upper ul {
+        padding-left: 2vw;        
+
+    }
+    .upper h1{
+        font-size: 6vw;
+    }
+    .navbar-container .lower ul li{
+        font-size: 2.65vw;
+        
+    }
+    
+}
